@@ -117,3 +117,117 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Widget Preview related
+.widget_preview/
+
+# ------------------------------------------------------------------
+# FoodScope additions
+# ------------------------------------------------------------------
+
+# Keep the app's pubspec.lock in git (the *.lock rule above would hide it)
+!**/pubspec.lock
+
+# Secrets: env files, API keys, signing keys
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+.env.keys
+**/secrets.dart
+**/secrets.json
+*.keystore
+*.p12
+*.pem
+*.key
+**/android/key.properties
+**/service-account*.json
+
+# Supabase CLI local state (keep config.toml, migrations and functions)
+**/supabase/.branches/
+**/supabase/.temp/
+**/supabase/.env
+**/supabase/.env.*
+**/supabase/functions/.env
+**/supabase/functions/**/.env
+.supabase/
+
+# Deno / Node (Edge Functions tooling)
+node_modules/
+
+# Flutter app build output (app lives in food_scope/)
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+.fvm/flutter_sdk
+
+# Android / Gradle / Kotlin
+**/android/.gradle/
+**/android/.kotlin/
+**/android/.cxx/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# IDE
+.idea/
+*.iml
+.vscode/settings.json
+.vscode/*.log
+
+# Windows / OS
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
